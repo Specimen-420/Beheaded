@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "beheaded",
+  "version": "${version}",
+
+  "name": "Beheaded",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Specimen"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.specimen.beheaded.Beheaded"
+    ],
+    "client": [
+      "net.specimen.beheaded.BeheadedClient"
+    ]
+  },
+  "mixins": [
+    "beheaded.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
